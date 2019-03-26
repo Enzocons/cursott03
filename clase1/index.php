@@ -80,8 +80,64 @@
  $animalesArray[100]="Grifo";
  echo " Me gustan los siguientes animales $animalesArray[0], $animalesArray[1], $animalesArray[2], $animalesArray[3], $animalesArray[4], $animalesArray[100]";
 
+ echo "<hr>";
+ echo "<h2>Ejercicio 5</h2>";
+ 
+ $auto=[
+     "marca"=>["Ford"],
+     "modelo"=>["Focus"],
+     "color"=>["Verde"],
+     "anio"=>["2010"],
+     "patente"=>["aa01243"],
+ ];
+ 
+ $auto[0]="Enzo";
+ $auto[14]="Aseguradora";
+ $auto["poliza"]="Poliza";
+ var_dump($auto);
 
 
+ echo "<hr>";
+ echo "<h2>Ejercicio 6</h2>";
+ 
+ $entero=20;
+ $decimal=10.5;
+
+ echo ($entero+$decimal);
+ echo "<br>";
+ echo ($entero-$decimal);
+ echo "<br>";
+ echo ($entero/$decimal);
+ echo "<br>";
+ echo ($entero*$decimal);
+ echo "<br>";
+ $division=($decimal/$entero);
+ echo "<br>";
+ echo $division;
+ echo "<br>";
+ $entero=$entero+1;
+ $decimal=$decimal+1;
+ $entero=$entero+5;
+ $decimal=$decimal-0.6;
+ echo "$entero, $decimal";
+ echo "<br>";
+ $resultado=(($entero*2)+$decimal)/($entero/2);
+ echo $resultado;
+
+
+ echo "<hr>";
+ echo "<h2>Ejercicio 7</h2>";
+ 
+ $var1='Hola';
+ $var2='Mundo!';
+ $var3=$var1." ".$var2;
+ $var4='Que bueno que esta PHP';
+ $var3=$var3.$var4;
+ echo $var3;
+
+
+
+ 
    ?>
     
 </body>
