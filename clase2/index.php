@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Clase PHP-2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/master.css">
     <script src="main.js"></script>
 </head>
 <body>
@@ -92,29 +92,28 @@
     echo "<hr>";
     echo "<h2>Switch </h2>";
     $dias= ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
-    var_dump($dias);
     $diaFestivo= rand(0,6);
     switch ($diaFestivo){
         case 0:
-          "$dias[0]"."Este dia es festivo";
-            break;
+        echo "$dias[0]"." Este dia es festivo";
+        break;
         case 1:
-            "$dias[1]"."Este dia es festivo";
+          echo  "$dias[1]"." Este dia es festivo";
             break;
         case 2:
-            "$dias[2]"."Este dia es festivo";
+          echo  "$dias[2]"." Este dia es festivo";
             break;
         case 3:
-          "$dias[3]"."Este dia es festivo";
+         echo "$dias[3]"." Este dia es festivo";
            break;
         case 4:
-           "$dias[4]"."Este dia es festivo";
+           echo"$dias[4]"." Este dia es festivo";
             break; 
         case 5:
-            "$dias[5]"."Este dia es festivo";
+          echo  "$dias[5]"." Este dia es festivo";
             break;             
         case 6:
-            "$dias[6]"."Este dia es festivo";
+          echo  "$dias[6]"." Este dia es festivo";
             break;
         default:
             echo "Debe especificar un valor entre 0 y 6";
