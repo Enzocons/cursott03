@@ -59,8 +59,8 @@
 
     echo "<hr>";
     echo "<h2>Ejercicio 5 </h2>";
-    $nombredeUsuario="";
-    $ContraseniadeUsuario="";
+    $nombredeUsuario="admin";
+    $ContraseniadeUsuario="1234";
     If($nombredeUsuario=="admin" && $ContraseniadeUsuario=="1234"){
         echo "Bienvenido!";
     }else if($nombredeUsuario!="admin" && $ContraseniadeUsuario=="1234" ){
@@ -125,10 +125,10 @@
     echo "<h2>Ejercicio con Dani</h2>";
     $dni="46848865";
     $Nombre= "Enzo";
-    $Sueldo=10000;
+    $Sueldo=rand(1,30000);
     $Aumento = 0;
     $saldototal=0;
-    If ($Sueldo<=12000){
+    If ( $Sueldo>=1  && $Sueldo<=12000){
         $Aumento=30;
         $saldototal=($Sueldo*$Aumento)/100 + $Sueldo;
         echo "<h3>Estimado portador DNI $dni su sueldo actual es $Sueldo
